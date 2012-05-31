@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag ("application.css", {:media => "all"}) %>
+<%= javascript_include_tag "application" %>
+<%= csrf_meta_tags %>
+
+-------------------------------------------------------------------------------
+
+match '/help', to: 'static_pages#help'
+match '/contact', to: 'static_pages#contact'
+
+-------------------------------------------------------------------------------
+
+<%= link_to "About", '#' %>
+<%= link_to "About", about_path %>
